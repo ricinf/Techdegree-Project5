@@ -1,0 +1,43 @@
+#lightgallery img {
+  max-width: 320px;
+  max-height: 234px;
+  padding: 40px 0;
+}
+#lightgallery {
+  text-align: center;
+}
+
+.lg-thumb,
+.lg-thumb-outer {
+  visibility: hidden;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+input {
+  height: 35px;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 40%;
+}
+
+@media (min-width: 820px) {
+  #lightgallery {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    max-width: 960px;
+  }
+
+  .lg-thumb,
+  .lg-thumb-outer {
+    visibility: visible;
+  }
+}
